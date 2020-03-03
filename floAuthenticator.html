@@ -7536,5 +7536,14 @@ Bitcoin.Util = {
         }
     }
 </script>
+
+<script>
+    function Login(privKey) {
+        myPrivKey = privKey
+        myPubKey = floCrypto.getPubKeyHex(myPrivKey)
+        myFloID = floCrypto.getFloIDfromPubkeyHex(myPubKey)
+    }
+
+</script>
 </body>
 </html>
